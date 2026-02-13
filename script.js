@@ -1,4 +1,4 @@
-﻿// Menu Hamburger
+// Menu Hamburger
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -235,4 +235,6 @@ const albumObserver = new IntersectionObserver((entries, obs) => {
 document.querySelectorAll('.music-card .album-art').forEach(art => {
     albumObserver.observe(art);
 });
+
+
 
