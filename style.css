@@ -247,15 +247,15 @@ body {
 
 /* Images dos membros */
 .member-card[data-member="han"] .member-image {
-    background: url('_apresentacao-de-membros/han-apresentacao.jpg') center/cover no-repeat;
+    background: url('./han-apresentacao.jpg') center/cover no-repeat;
 }
 
 .member-card[data-member="kang"] .member-image {
-    background: url('_apresentacao-de-membros/kang-apresentacao.jpg') center/cover no-repeat;
+    background: url('./kang-apresentacao.jpg') center/cover no-repeat;
 }
 
 .member-card[data-member="park"] .member-image {
-    background: url('_apresentacao-de-membros/park-apresentacao.jpg') center/cover no-repeat;
+    background: url('./park-apresentacao.jpg') center/cover no-repeat;
 }
 
 .member-card:hover .member-image {
@@ -311,19 +311,19 @@ body {
 
 /* Gradientes dos albums */
 .music-card[data-album="neon"] .album-art {
-    background: url('_top-musicas-capas/capa_taste_it_back.jpg') center/cover no-repeat;
+    background: url('./capa_taste_it_back.jpg') center/cover no-repeat;
 }
 
 .music-card[data-album="midnight"] .album-art {
-    background: url('_top-musicas-capas/capa_love_potion.jpg') center/cover no-repeat;
+    background: url('./capa_love_potion.jpg') center/cover no-repeat;
 }
 
 .music-card[data-album="starlight"] .album-art {
-    background: url('_top-musicas-capas/capa_wildflower.jpg') center/cover no-repeat;
+    background: url('./capa_wildflower.jpg') center/cover no-repeat;
 }
 
 .music-card[data-album="cosmic"] .album-art {
-    background: url('_top-musicas-capas/capa_fallen_angels.jpg') center/cover no-repeat;
+    background: url('./capa_fallen_angels.jpg') center/cover no-repeat;
 }
 
 .music-card h3 {
@@ -396,83 +396,83 @@ body {
 }
 
 .gallery-item#foto01 {
-    background-image: url('_galeria/glr-1.jpg');
+    background-image: url('./glr-1.jpg');
 }
 
 .gallery-item#foto02 {
-    background-image: url('_galeria/glr-2.jpg');
+    background-image: url('./glr-2.jpg');
 }
 
 .gallery-item#foto03 {
-    background-image: url('_galeria/glr-3.jpg');
+    background-image: url('./glr-3.jpg');
 }
 
 .gallery-item#foto04 {
-    background-image: url('_galeria/glr-4.jpg');
+    background-image: url('./glr-4.jpg');
 }
 
 .gallery-item#foto05 {
-    background-image: url('_galeria/glr-5.jpg');
+    background-image: url('./glr-5.jpg');
 }
 
 .gallery-item#foto06 {
-    background-image: url('_galeria/glr-6.jpg');
+    background-image: url('./glr-6.jpg');
 }
 
 .gallery-item#foto07 {
-    background-image: url('_galeria/glr-7.jpg');
+    background-image: url('./glr-7.jpg');
 }
 
 .gallery-item#foto08 {
-    background-image: url('_galeria/glr-8.jpg');
+    background-image: url('./glr-8.jpg');
 }
 
 .gallery-item#foto09 {
-    background-image: url('_galeria/glr-9.jpg');
+    background-image: url('./glr-9.jpg');
 }
 
 .gallery-item#foto10 {
-    background-image: url('_galeria/glr-10.jpg');
+    background-image: url('./glr-10.jpg');
 }
 
 .gallery-item#foto11 {
-    background-image: url('_galeria/glr-11.jpg');
+    background-image: url('./glr-11.jpg');
 }
 
 .gallery-item#foto12 {
-    background-image: url('_galeria/glr-12.jpg');
+    background-image: url('./glr-12.jpg');
 }
 
 .gallery-item#foto13 {
-    background-image: url('_galeria/glr-13.jpg');
+    background-image: url('./glr-13.jpg');
 }
 
 .gallery-item#foto14 {
-    background-image: url('_galeria/glr-14.jpg');
+    background-image: url('./glr-14.jpg');
 }
 
 .gallery-item#foto15 {
-    background-image: url('_galeria/glr-15.jpg');
+    background-image: url('./glr-15.jpg');
 }
 
 .gallery-item#foto16 {
-    background-image: url('_galeria/glr-16.jpg');
+    background-image: url('./glr-16.jpg');
 }
 
 .gallery-item#foto17 {
-    background-image: url('_galeria/glr-17.jpg');
+    background-image: url('./glr-17.jpg');
 }
 
 .gallery-item#foto18 {
-    background-image: url('_galeria/glr-18.jpg');
+    background-image: url('./glr-18.jpg');
 }
 
 .gallery-item#foto19 {
-    background-image: url('_galeria/glr-19.jpg');
+    background-image: url('./glr-19.jpg');
 }
 
 .gallery-item#foto20 {
-    background-image: url('_galeria/glr-20.jpg');
+    background-image: url('./glr-20.jpg');
 }
 
 /* Hover para todos items da galeria - zoom out */
@@ -691,5 +691,6 @@ body {
         opacity: 1;
     }
 }
+
 
 
