@@ -235,6 +235,3 @@ const albumObserver = new IntersectionObserver((entries, obs) => {
 document.querySelectorAll('.music-card .album-art').forEach(art => {
     albumObserver.observe(art);
 });
-
-
-
