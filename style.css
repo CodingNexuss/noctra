@@ -1,4 +1,4 @@
-﻿*, *::before, *::after {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -101,7 +101,7 @@ body {
     position: relative;
     overflow: hidden;
     color: white;
-    background-image: url('background\ do\ site.jpg');
+    background-image: url('background-do-site.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -247,15 +247,15 @@ body {
 
 /* Images dos membros */
 .member-card[data-member="han"] .member-image {
-    background: url('_apresenta%C3%A7%C3%A3o-de-membros/han-apresentacao.jpg') center/cover no-repeat;
+    background: url('_apresentacao-de-membros/han-apresentacao.jpg') center/cover no-repeat;
 }
 
 .member-card[data-member="kang"] .member-image {
-    background: url('_apresenta%C3%A7%C3%A3o-de-membros/kang-apresentacao.jpg') center/cover no-repeat;
+    background: url('_apresentacao-de-membros/kang-apresentacao.jpg') center/cover no-repeat;
 }
 
 .member-card[data-member="park"] .member-image {
-    background: url('_apresenta%C3%A7%C3%A3o-de-membros/park-apresentacao.jpg') center/cover no-repeat;
+    background: url('_apresentacao-de-membros/park-apresentacao.jpg') center/cover no-repeat;
 }
 
 .member-card:hover .member-image {
@@ -691,3 +691,5 @@ body {
         opacity: 1;
     }
 }
+
+
