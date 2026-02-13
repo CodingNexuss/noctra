@@ -200,10 +200,10 @@ document.addEventListener('keydown', (e) => {
 
 // Lazy-load das capas das Top Musicas
 const albumCovers = {
-    'TASTE IT BACK': '_top-musicas-capas/capa_taste_it_back.jpg',
-    'LOVE POTION': '_top-musicas-capas/capa_love_potion.jpg',
-    WILDFLOWER: '_top-musicas-capas/capa_wildflower.jpg',
-    'FALLEN ANGEL': '_top-musicas-capas/capa_fallen_angels.jpg'
+    'TASTE IT BACK': './capa_taste_it_back.jpg',
+    'LOVE POTION': './capa_love_potion.jpg',
+    WILDFLOWER: './capa_wildflower.jpg',
+    'FALLEN ANGEL': './capa_fallen_angels.jpg'
 };
 
 const albumObserver = new IntersectionObserver((entries, obs) => {
@@ -235,3 +235,4 @@ const albumObserver = new IntersectionObserver((entries, obs) => {
 document.querySelectorAll('.music-card .album-art').forEach(art => {
     albumObserver.observe(art);
 });
+
