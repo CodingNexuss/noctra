@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOCTRA - Banda K-AI</title>
+  <meta name="description" content="NOCTRA e um grupo K-AI com conceito etereo, dark e espacial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container navbar__inner">
+    <a href="#home" class="logo" aria-label="Voltar ao inicio">
+      <img src="assets/images/other/logo-noctra.png" alt="NOCTRA logo" class="logo-img">
+      <span class="logo-text">NOƆTRA</span>
+    </a>
+
+    <ul id="menu-principal" class="nav-links">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#albums">Albums</a></li>
+      <li><a href="#members">Membros</a></li>
+      <li><a href="#music">Músicas</a></li>
+      <li><a href="#gallery">Galeria</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <canvas class="hero-particles" id="heroParticles" aria-hidden="true"></canvas>
+
+  <div class="container hero-inner">
+
+    <div class="player-frame" id="playerFrame">
+      <div class="player-frame__top">
+        <button class="player-frame__icon-btn" id="heroCollapse" aria-label="Recolher player" type="button">⌃</button>
+        <span class="eyebrow player-frame__label">Agora tocando</span>
+        <div class="player-frame__top-icons">
+          <button class="player-frame__icon-btn" aria-label="Legendas" type="button">CC</button>
+          <button class="player-frame__icon-btn" aria-label="Configurações" type="button">⚙</button>
+        </div>
+      </div>
+
+      <div class="player-frame__stage">
+        <div id="ytPlayer" class="player-frame__yt"></div>
+        <div class="player-frame__veil"></div>
+        <div class="hero-copy">
+          <span class="eyebrow">NOƆTRA · K-AI GROUP</span>
+          <h1>NOCTRA</h1>
+          <p class="hero-tagline">etéreo · dark · espacial</p>
+        </div>
+      </div>
+
+      <div class="player-frame__controls">
+        <button class="ctrl-btn ctrl-play" id="heroPlay" aria-label="Reproduzir" type="button">▶</button>
+        <span class="time mono" id="heroTime">00:00 / 00:00</span>
+        <div class="progress" id="heroProgress" role="slider" aria-label="Progresso da faixa" tabindex="0">
+          <div class="progress__fill" id="heroProgressFill"></div>
+        </div>
+        <button class="ctrl-btn ctrl-mute" id="heroMute" aria-label="Silenciar" type="button">🔊</button>
+      </div>
+    </div>
+
+    <a href="#music" class="cta-button">Ouvir agora</a>
+  </div>
+</section>
+
+<section id="about" class="about container">
+  <span class="eyebrow">Sobre o grupo</span>
+  <h2>Sobre Nós</h2>
+  <p>
+   NOƆTRA possui um conceito etéreo, dark e espacial, o grupo mistura mistério, atmosferas densas e refrões marcantes. Versátil por essência, NOƆTRA não se limita a um único som ou imagem — cada comeback revela uma nova face. As integrantes carregam personalidades distintas, mas se conectam como constelações no mesmo céu. A cor oficial do grupo é o roxo, representando profundidade e beleza. Han So-ra é a vocalista principal, conhecida por sua aura suave e sensível. Sua voz clara contrasta com letras intensas, criando momentos delicados que ficam na memória. Kang Ga-Yeon visual e vocalista secundária que se adapta a todo tipo de conceito. Ela traz o peso e o mistério do grupo. Park Seo-Min é confiança em movimento. Com carisma afiado e energia dominante, imprime força e atitude em cada performance. O fandom oficial se chama NOƆTRALS— aqueles que caminham junto da NOƆTRA na escuridão, refletindo sua própria luz.
+  </p>
+
+  <div class="stats">
+    <div class="stat"><h3>3</h3><p>Membros</p></div>
+    <div class="stat"><h3>100+</h3><p>Seguidores</p></div>
+    <div class="stat"><h3>1</h3><p>Album</p></div>
+  </div>
+</section>
+
+<section id="albums" class="albums container">
+  <span class="eyebrow">Discografia</span>
+  <h2>Albums</h2>
+  <div class="albums-grid">
+    <div class="album-card">
+      <div class="album-cover" style="background-image:url('assets/images/albums/Mystic Hearts.jpg')"></div>
+      <h3>Mystic Hearts</h3>
+      <p>Album Completo</p>
+      <a href="#" class="album-btn">Explorar</a>
+    </div>
+  </div>
+</section>
+
+<section id="members" class="members container">
+  <span class="eyebrow">Integrantes</span>
+  <h2>Membros</h2>
+  <div class="members-grid">
+    <div class="member-card">
+      <div class="member-image" style="background-image:url('assets/images/members/han-apresentacao.jpg')"></div>
+      <h3>Han So-ra</h3>
+      <p>Main Vocal</p>
+      <span class="member-stat">✦ 23.262.000 M</span>
+    </div>
+    <div class="member-card member-card--featured">
+      <div class="member-image" style="background-image:url('assets/images/members/kang-apresentacao.jpg')"></div>
+      <h3>Kang Ga-Yeon</h3>
+      <p>Lead Vocal</p>
+      <span class="member-stat">✦ 23.262.000 M</span>
+    </div>
+    <div class="member-card">
+      <div class="member-image" style="background-image:url('assets/images/members/park-apresentacao.jpg')"></div>
+      <h3>Park Seo-Min</h3>
+      <p>Main Rapper</p>
+      <span class="member-stat">✦ 23.262.000 M</span>
+    </div>
+  </div>
+</section>
+
+<section id="music" class="music container">
+  <span class="eyebrow">Discografia</span>
+  <h2>Top Músicas</h2>
+  <div class="music-grid" id="musicGrid">
+    <div class="music-card" data-yt="svI8lp9AUMU" data-title="TASTE IT BACK (그것을 증명해 보세요)">
+      <div class="album-art" style="background-image:url('assets/images/music/capa_taste_it_back.jpg')">
+        <span class="album-art__play" aria-hidden="true">▶</span>
+      </div>
+      <h3>'TASTE IT BACK' (그것을 증명해 보세요)</h3>
+      <div class="music-card__row">
+        <button class="play-btn" type="button">Ouça</button>
+        <a href="https://www.youtube.com/watch?v=svI8lp9AUMU" class="yt-link" target="_blank" rel="noopener noreferrer" aria-label="Abrir no YouTube">↗</a>
+      </div>
+    </div>
+    <div class="music-card" data-yt="1ydMJqvqI_Q" data-title="LOVE POTION (사랑의 묘약)">
+      <div class="album-art" style="background-image:url('assets/images/music/capa_love_potion.jpg')">
+        <span class="album-art__play" aria-hidden="true">▶</span>
+      </div>
+      <h3>'LOVE POTION' (사랑의 묘약)</h3>
+      <div class="music-card__row">
+        <button class="play-btn" type="button">Ouça</button>
+        <a href="https://www.youtube.com/watch?v=1ydMJqvqI_Q" class="yt-link" target="_blank" rel="noopener noreferrer" aria-label="Abrir no YouTube">↗</a>
+      </div>
+    </div>
+    <div class="music-card" data-yt="ZlZA5-IUKb8" data-title="FALLEN ANGEL (타락한 천)">
+      <div class="album-art" style="background-image:url('assets/images/music/capa_fallen_angels.jpg')">
+        <span class="album-art__play" aria-hidden="true">▶</span>
+      </div>
+      <h3>'FALLEN ANGEL' (타락한 천)</h3>
+      <div class="music-card__row">
+        <button class="play-btn" type="button">Ouça</button>
+        <a href="https://www.youtube.com/watch?v=ZlZA5-IUKb8" class="yt-link" target="_blank" rel="noopener noreferrer" aria-label="Abrir no YouTube">↗</a>
+      </div>
+    </div>
+    <div class="music-card" data-yt="FgPKLKuedT8" data-title="WILDFLOWER (야생화)">
+      <div class="album-art" style="background-image:url('assets/images/music/capa_wildflower.jpg')">
+        <span class="album-art__play" aria-hidden="true">▶</span>
+      </div>
+      <h3>'WILDFLOWER' (야생화)</h3>
+      <div class="music-card__row">
+        <button class="play-btn" type="button">Ouça</button>
+        <a href="https://www.youtube.com/watch?v=FgPKLKuedT8" class="yt-link" target="_blank" rel="noopener noreferrer" aria-label="Abrir no YouTube">↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery container">
+  <span class="eyebrow">Momentos</span>
+  <h2>Galeria</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-1.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-2.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-3.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-4.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-5.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-6.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-7.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-8.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-9.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-10.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-11.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-12.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-13.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-14.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-15.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-16.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-17.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-18.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-19.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-20.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-21.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-22.jpg')"></div>
+    <div class="gallery-item" style="background-image:url('assets/images/gallery/glr-23.jpg')"></div>
+    <div class="gallery-item" style="background-image: url('assets/images/gallery/glr-24.jpg');"></div>
+  </div>
+</section>
+
+<section id="contact" class="contact container">
+  <span class="eyebrow">Fique por perto</span>
+  <h2>Fique Conectado!</h2>
+  <h3>Siga-nos nas redes sociais e receba as últimas notícias sobre NOƆTRA.</h3>
+  <div class="social-links">
+    <a href="https://www.youtube.com/@thenoctragirls_official" class="social-btn" target="_blank" rel="noopener noreferrer">YouTube</a>
+    <a href="https://www.tiktok.com/@noctraofficial_" class="social-btn" target="_blank" rel="noopener noreferrer">TikTok</a>
+  </div>
+
+  <form class="newsletter">
+    <input type="email" placeholder="Seu email" required>
+    <button type="submit">Inscrever</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2026 AURE Entertainment. Todos direitos reservados.</p>
+  <p>Desenvolvido com ❤ para fãs do K-pop</p>
+</footer>
+
+<div class="lightbox" aria-hidden="true">
+  <span class="lightbox-close" role="button" aria-label="Fechar">&times;</span>
+  <img src="" alt="Imagem ampliada da galeria">
+</div>
+
+<!-- Barra de player fixa, estilo "now playing" -->
+<div class="now-playing-bar" id="nowPlayingBar">
+  <div class="now-playing-bar__meta">
+    <div class="now-playing-bar__art" id="npArt"></div>
+    <div class="now-playing-bar__text">
+      <span class="now-playing-bar__badge mono">NOƆTRA</span>
+      <p class="now-playing-bar__title" id="npTitle">Selecione uma música</p>
+    </div>
+  </div>
+
+  <div class="now-playing-bar__center">
+    <div class="now-playing-bar__controls">
+      <button id="npPrev" class="ctrl-btn" aria-label="Anterior" type="button">⏮</button>
+      <button id="npPlay" class="ctrl-btn now-playing-bar__play" aria-label="Reproduzir" type="button">▶</button>
+      <button id="npNext" class="ctrl-btn" aria-label="Próxima" type="button">⏭</button>
+      <button id="npShuffle" class="ctrl-btn" aria-label="Aleatório" type="button">⤨</button>
+    </div>
+    <div class="now-playing-bar__progress" id="npProgress">
+      <div class="now-playing-bar__progress-fill" id="npProgressFill"></div>
+    </div>
+  </div>
+
+  <div class="now-playing-bar__actions">
+    <span class="mono now-playing-bar__time" id="npTime">00:00 / 00:00</span>
+  </div>
+</div>
+
+<div id="ytApiRoot" style="display:none"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="script.js"></script>
+</body>
+</html>
